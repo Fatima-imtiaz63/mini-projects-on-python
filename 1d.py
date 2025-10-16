@@ -1,0 +1,10 @@
+import numpy as np
+numbers = np.array([10, 20, 30, 40, 50])
+print("Array elements: numbers")
+print("Sum:", np.sum(numbers))
+print("Mean(average):", np.mean(numbers))
+print("maximum value:", np.max(numbers))
+print("minimum value:", np.min(numbers))
+print("Standard deviation:", np.std(numbers))
+print("Array multiplied by 2:", numbers*2)
+print("Array plus 5:", numbers + 5)
