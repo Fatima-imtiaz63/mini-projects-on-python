@@ -1,17 +1,23 @@
-def get_number():
-    """ Return a simple list of integers"""
-    return[3, 4, 7, 8, 10, 11, 12]
-nums = get_number()
-is_even = lambda x:x % 2 ==0
-even = [x for x in nums if is_even(x)]
-double = lambda x:x *2
-doubled = [double(x) for x in even]
-print("original:", nums)
-print("Even numbers:", even)
-print("double even:", doubled)
-def sum_list(list):
-    total = 0
-    for v in list:
-        total += v
-        return total
-    print("Sums of doubled even:" ,sum_list(doubled))
+def calculator():
+    print("1. Addition")
+    print("2. subtraction")
+    print("3. Multiplication")
+    print("4 Division")
+    choice = input("Enter your choice (1/2/3/4): ")
+    num1 = float(input("Enter first number:"))
+    num2 = float(input("Enter second number:"))
+    if choice == '1':
+        print(f"{num1 + num2}")
+    elif choice == '2':
+        print(f"{num1 - num2}")
+    elif choice == '3':
+        print(f"{num1 * num2}")
+    elif choice =='4':
+        if num2 != 0:
+            print(f"{num1 / num2}")
+        else:
+            print("Error: Divion by zero!")
+    else:
+        print("Invalid choice")
+
+calculator()
