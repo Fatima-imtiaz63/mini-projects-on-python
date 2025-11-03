@@ -20,4 +20,4 @@ def calculator():
     else:
         print("Invalid choice")
 
-calculator()
+calculator(98)
