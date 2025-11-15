@@ -1,0 +1,4 @@
+Hello this is a file created in a using python.
+We are learning file handling from function.
+
+ This is a line is newly added to the file.
